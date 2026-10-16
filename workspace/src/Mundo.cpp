@@ -157,6 +157,11 @@ void CMundo::OnTimer(int value)
 		if (fd_logger >= 0)
 			write(fd_logger, buffer, sizeof(buffer));
 	}
+	
+	if (puntos1 >= 3 || puntos2 >= 3)
+	{
+		exit(0);
+	}
 
 }
 
